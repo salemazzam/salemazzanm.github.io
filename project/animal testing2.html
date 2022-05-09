@@ -2,160 +2,310 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>animal research</title>
- <!--<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://kit.fontawesome.com/040f4a9b59.js" crossorigin="anonymous"></script>
   <style>
 
-  .fa {
+
+            header{
+              background-color:black;
+              width: 100%;
+              position:fixed;
+              z-index: 10000;
+              display: flex;
+              display: ;
+              justify-content:space-between;
+              align-items: center;
+              padding:  20px 170px;
+              position: relative;
+          }
+
+          .navigation a:hover{
+              margin: 0;
+              padding: 0;
+          }
+          .logo{
+              text-decoration: none;
+              color: wheat;
+              text-transform: uppercase;
+              font-weight: 850;
+              font-size: 2.0em;
+          }
+          .navigation a{
+              color: wheat;
+              text-decoration: none;
+              font-size: 1.0em;
+              font-weight: 500;
+              padding-left: 30px;
+              text-transform: uppercase;
+          }
+          .navigation a:hover{
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              background-color: brown;
+              font-weight:500 ;
+              font-size:1.3em;
+          }
+          section{
+              padding: 40px 100px}
+
+
+
+  * {
+    box-sizing:border-box;
+  }
+
+  body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    padding: 64px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+
+  .column-66 {
+    float: left;
+    width: 66.66666%;
     padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
   }
 
-  .fa:hover {
-      opacity: 0.7;
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
   }
 
-  .fa-facebook {
-    background: #3B5998;
+  .large-font {
+    font-size: 48px;
+  }
+
+  .xlarge-font {
+    font-size: 64px
+  }
+
+  .button {
+    border: none;
     color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
   }
 
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
   }
 
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+}
 
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
   table, th, td {
     border: 2px solid black;
     border-collapse: solid;
   }
+  tr:hover {background-color: yellow;}
 
-  h1 {
-    text-shadow: 2px 2px 5px blue;
-  }
+th {
+  background-color: #B28F56;
+  color: white;
+}
 
 
-
-  body {
-
-    background-image: url('medicalbackground.jpg');
-  }
 
   h1 {
 
-    border: 2px solid black;
-    border-radius: 25px;
-    font-size: 1.5em;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
   }
+
+
+    h1 {
+      color: #95733C;
+    }
+
+
+
   p {
-
-    font-size: 1.5em;
+    font-size: 25px;
   }
 
 
 p {text-align: center;}
 div {text-align: center;}
-/*div{
-  padding: 0px 50px;
-}*/
+
+body {
+padding: 25px;
+background-color: #F7F1D0;
+color: black;
+font-size: 25px;
+}
+
+.dark-mode {
+background-color: #453A04;
+color: white;
+}
+.button {
+background-color: #000000;
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.button4 {border-radius: 12px;}
 
   </style>
+    <title>examples of animal testing</title>
 
 </head>
 <body>
+  <header>
+    <a href="#" class="logo" >animal kingdom</a>
+    <nav class="navigation" >
+        <a href=""> animal diseases </a>
+        <a href="">pet shop</a>
+        <a href="">vet clinics</a>
+        <a href="">topics</a>
+        <a href=""> contact us </a>
+    </nav>
+    </header>
 
-  <!--<img src="animal-testing-wide.jpg" width="1500" height="200"  alt="animal testing">-->
-  <h1 style="font-size:5vw"><center>examples of animal testing</center></h1>
-<ul>
-<li style="color:black;font-size:30px">breast cancer</li>
+              <button onclick="myFunction()">dark mode</button>
+
+              <script>
+              function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");
+              }
+              </script>
+
+              <div style="text-align:center">
+              </div>
 
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ig1-n4X8pCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                <center><h1 class="xlarge-font"><b>Examples Of Animal Testing</b></h1></center>
+              <div class="container">
+                <div class="row">
+                  <div class="column-66">
+                    <h1 class="large-font" style="color:black;"><b>Breast Cancer</b></h1>
+                    <p> Breast cancer is the second most common cancer worldwide, with 1.6 million new cases and over half a million deaths each year. However, early detection and good treatments mean that survival rates have increased to about 80% in more developed regions. Animal studies led to the development of tamoxifen, one of the most successful treatments, and more recently Herceptin (trastuzumab) and aromatase inhibitors.
+                    mammals are similar to humans. Rodents, especially mice and rats, are the most popular animals for breast cancer research. In addition, tree shrews are increasingly used due to their closer evolutionary relationship to primates than to rodents. However, the disadvantages of using mammals for breast cancer research include long experimental periods and high costs.
+                    Among mammalian animals, mice are the most popular due to their small size, low cost, short generation time, and mature gene editing technology. Mice are also similar to humans in terms of anatomy, physiology, and genetics. Additionally, there are many inbred strains of mice available. However, breast cancer mouse models also have several drawbacks. For example, mice can tolerate higher doses of drugs than humans, and thus the blood concentration that can be achieved in mice cannot be reached in human patients; as such, 90% of new anticancer drugs fail in human clinical trials even though they were effective in mouse models. Additionally, mouse breast cancer metastasis usually occurs in the lung, but not the lymph node, liver, bone, and brain where human breast cancers usually metastasize.</p>
 
-
-<p id="demo">Breast cancer is the second most common cancer worldwide, with 1.6 million new cases and over half a million deaths each year. However, early detection and good treatments mean that survival rates have increased to about 80% in more developed regions. Animal studies led to the development of tamoxifen, one of the most successful treatments, and more recently Herceptin (trastuzumab) and aromatase inhibitors.
-mammals are similar to humans. Rodents, especially mice and rats, are the most popular animals for breast cancer research. In addition, tree shrews are increasingly used due to their closer evolutionary relationship to primates than to rodents. However, the disadvantages of using mammals for breast cancer research include long experimental periods and high costs.
-Among mammalian animals, mice are the most popular due to their small size, low cost, short generation time, and mature gene editing technology. Mice are also similar to humans in terms of anatomy, physiology, and genetics. Additionally, there are many inbred strains of mice available. However, breast cancer mouse models also have several drawbacks. For example, mice can tolerate higher doses of drugs than humans, and thus the blood concentration that can be achieved in mice cannot be reached in human patients; as such, 90% of new anticancer drugs fail in human clinical trials even though they were effective in mouse models. Additionally, mouse breast cancer metastasis usually occurs in the lung, but not the lymph node, liver, bone, and brain where human breast cancers usually metastasize.</p>
-  <p><a href="https://en.wikipedia.org/wiki/Breast_cancer"target="_blank">visit to find out more. </a></p>
-<button type="button" onclick="document.getElementById('demo').style.fontSize='30px'">bigger text!</button>
-
-
-  <p style="font-size:40px">-------------------------------------------------------------------------------------------</p>
-
-  <li style="color:black;font-size:30px">brain injury</li>
-
-    <center><img src="20210719-brain.jpg" width="600" height="300" alt="brain injury">
-      <img src="Major-causes-of-traumatic-brain-injuries_QBI-concussion.png" width="600" height="300" alt="brain injury"></center>
-    <p>Brain trauma is typically caused by an impact to the head, for example in a car crash or fall. In these events, the brain can collide with the skull and damage blood vessels. Internal haemorrhaging can lead to parts of the brain being starved of oxygen and a build-up of pressure can cause serious damage. A number of treatments (stem cells, calcium channel blockers, anti-inflammatory drugs, oestrogens, and iron chelators) have shown potential in animal models of intra-cerebral haemorrhage.
-Animal experiments are also used to determine which techniques are best following traumatic brain injury. Acute therapies such as hypothermia treatment or the use of hypertensives have been shown to reduce brain damage in animal models, and rehabilitation therapies such as a ketogenic diet, exercise and sensory stimulation have also been confirmed through controlled trials with animals.
-rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.</p><
-  <p><a href="https://www.youtube.com/watch?v=TdWhN9ihDTQ"target="_blank">Influences of Animal Research on Advancing Treatment for Human Brain Injuries. </a></p>
-
-  <p style="font-size:40px">-------------------------------------------------------------------------------------------</p>
-
-  <li style="color:black;font-size:30px">childhood leukemia</li>
-
-  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/CK78IXTRH0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-  <p>rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.
-There are currently nine different types of leukemia according to the Leukemia and Lymphoma Society. Accounting for 85% of all leukemia cases are 4 types: acute myeloid leukemia (AML), acute lymphoblastic leukemia (ALL), chronic myeloid leukemia (CML), and chronic lymphocytic leukemia (CLL). Leukemia is the most common type of childhood cancer, making up one-third of childhood cancer cases. Treatments have advanced so that children have an eight out of ten chance of survival. About 98% of children with acute lymphocytic leukemia go into remission within weeks of starting treatment, and about 90% of those children can be cured. An integral part of this life-saving progress is animal research.
-Research using mice has made crucial steps in understanding and tackling leukemia. In the 1970’s mice were used to determine that all malignant cells must be destroyed and that the earlier treatment begins the higher likelihood of eliminating the cancer are; this knowledge has since been used in treating all types of cancer. Today, by introducing a human immune system in mice and observing their response to transplanted cells, the possibility of bone marrow transplants in patients with leukemia is improving. Mice are also being used to pioneer gene therapy as a way to attack leukemia cells, and immunotherapy, an emerging treatment which shows promise against leukemic cells that have already resisted other treatments. While these experimental treatments are being developed, in most cases of leukemia chemotherapy remains the main treatment, which also would not be possible without animal research. In the 1960’s thanks to research on mice, a more aggressive chemotherapy regimen increased the remission rate from 25% to 60% by the end of the decade(1). The remission rate is even greater now at 85%, thanks to animal research furthering our knowledge of chemotherapy and other cancer treatments.
-Cats also benefit from leukemia research. They offered insight into the disease after the feline leukemia virus (FeLV) was identified in 1965. A vaccine for FeLV was developed and this knowledge that has allowed leukemia to be prevented and treated in cats can also offer valuable understanding into cases of leukemia in humans. Research into FeLV even resulted in the identification of the first human leukemia virus, HTLV-1. Animal research has helped reduced the fatality of feline leukemia and raised the survival rate of childhood leukemia from 30% to 80%, helping humans and pets alike.</p>
-
-    <p><a href="https://en.wikipedia.org/wiki/Childhood_leukemia"target="_blank">visit to find out more about childhood leukemia</a></p>
-
-  <p style="font-size:40px">-------------------------------------------------------------------------------------------</p>
-
- <li style="color:black;font-size:30px">covid_19</li>
-
- <p>rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.
- Animal research plays a key role in developing successful vaccines for humans. Before promising vaccine candidates can be tested in humans, they must first be tested for safety and effectiveness in animals as required by the U.S. Food and Drug Administration. To do this, scientists first determine whether a vaccine candidate can stimulate an adequate and safe immune response. This important step is often conducted using small and then, potentially, larger animal models of disease. Mice are frequently used because they reproduce rapidly, have a well-characterized immune system and a defined genome. Some labs turned to mouse models of infection early in the COVID-19 pandemic only to find that mice don’t get infected with SARS-CoV-2. In order to infect cells, SARS-CoV-2 must bind to a human protein called ACE2. The human and mouse ACE2 proteins are different, and SARS-CoV-2 does not bind to mouse cells. Scientists overcame this problem by generating mice that can express the human version of ACE2 and can therefore be infected with SARS-CoV-2. When these genetically modified mice are infected by the virus, they lose weight and become sick in ways that are similar to what happens when people are infected with the virus. Mouse models provided vital information about COVID-19 symptoms and its disease course and continues to be used by researchers to understand COVID-19 disease.</p>
-     <center><img src="488803.bin.jpg" width="300" height="300" alt="hamster">
-     <img src="images.jpg" width="300" height="300" alt="hamster"></center>
-   <p>Syrian hamsters are another important animal model for COVID-19 because disease in those animals closely resembles the disease in humans. Additionally, older male hamsters develop more severe disease than young female hamsters, which reflects some of the differences seen in humans infected by SARS-CoV-2. Hamster models have contributed to the evaluation of investigational COVID-19 vaccine candidates, immunotherapies, and antiviral drugs.Vaccine development for COVID-19 also benefitted from nonhuman primate studies. In assessing immunogenicity and protection of vaccines in pre-clinical animal models, nonhuman primates provide several advantages for clinical translation. They are outbred, have greater similarity to humans than rodents in innate immune responses and B- and T-cell repertoires, and allow use of clinically-relevant vaccine doses. Recent studies in nonhuman primates show that SARS-CoV-2 targets similar replication sites and recapitulates some aspects of COVID-19 disease. Nonhuman primates are used during the later stages of vaccine development and typically build upon the knowledge accumulated in earlier small animal studies. </p>
+                  </div>
+                  <div class="column-33">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/Ig1-n4X8pCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
 
 
 
 
 
-          <p><a href="https://en.wikipedia.org/wiki/COVID-19"target="_blank">visit to find out more. </a></p>
+
+  <div class="container" style="background-color:#C2B262">
+    <div class="row">
+      <div class="column-33">
+        <img src="20210719-brain.jpg" alt="App" width="335" height="471">
+          <img src="Major-causes-of-traumatic-brain-injuries_QBI-concussion.png" width="335" height="471" alt="brain injury">
+      </div>
+      <div class="column-66">
+
+        <h1 class="large-font" style="color:black;"><b>Brain Injury</b></h1>
+        <p>>Brain trauma is typically caused by an impact to the head, for example in a car crash or fall. In these events, the brain can collide with the skull and damage blood vessels. Internal haemorrhaging can lead to parts of the brain being starved of oxygen and a build-up of pressure can cause serious damage. A number of treatments (stem cells, calcium channel blockers, anti-inflammatory drugs, oestrogens, and iron chelators) have shown potential in animal models of intra-cerebral haemorrhage.
+    Animal experiments are also used to determine which techniques are best following traumatic brain injury. Acute therapies such as hypothermia treatment or the use of hypertensives have been shown to reduce brain damage in animal models, and rehabilitation therapies such as a ketogenic diet, exercise and sensory stimulation have also been confirmed through controlled trials with animals.
+    rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.</p>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="large-font" style="color:black;"><b>Childhood Leukemia</b></h1>
+        <p>rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.
+      There are currently nine different types of leukemia according to the Leukemia and Lymphoma Society. Accounting for 85% of all leukemia cases are 4 types: acute myeloid leukemia (AML), acute lymphoblastic leukemia (ALL), chronic myeloid leukemia (CML), and chronic lymphocytic leukemia (CLL). Leukemia is the most common type of childhood cancer, making up one-third of childhood cancer cases. Treatments have advanced so that children have an eight out of ten chance of survival. About 98% of children with acute lymphocytic leukemia go into remission within weeks of starting treatment, and about 90% of those children can be cured. An integral part of this life-saving progress is animal research.</p>
+
+      </div>
+      <div class="column-33">
+        <iframe width="500" height="325" src="https://www.youtube.com/embed/CK78IXTRH0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="background-color:#C2B262">
+    <div class="row">
+      <div class="column-33">
+        <img src="488803.bin.jpg" alt="App" width="335" height="471">
+          <img src="images.jpg" width="335" height="471" alt="hamster">
+      </div>
+      <div class="column-66">
+
+        <h1 class="large-font" style="color:black;"><b>COVID_19</b></h1>
+        <p>rodents have become popular as models for TBI research. Rodents also share great similarity with human brains and are easier to purchase and maintain than larger animals. TBI models like FPI (Dixon et al., 1987), cortical impact injury (CCI) (Dixon et al., 1991), weight drop–impact acceleration injury (Marmarou et al., 1994) and blast injury (Leung et al., 2008) are most widely used in rodent TBI research. Recently, fruit flies and zebrafish have gained attention in TBI research because of several advantages that they offer over, like availability of an extensive genetic toolkit (Gistelinck et al., 2012), short lifespan, low cost and standardized outcome measurements (Xiong et al., 2013). These models are all targeted at improving our comprehension of the complex deleterious molecular cascades.
+        Animal research plays a key role in developing successful vaccines for humans. Before promising vaccine candidates can be tested in humans, they must first be tested for safety and effectiveness in animals as required by the U.S. Food and Drug Administration. To do this, scientists first determine whether a vaccine candidate can stimulate an adequate and safe immune response. This important step is often conducted using small and then, potentially, larger animal models of disease. Mice are frequently used because they reproduce rapidly, have a well-characterized immune system and a defined genome. Some labs turned to mouse models of infection early in the COVID-19 pandemic only to find that mice don’t get infected with SARS-CoV-2. In order to infect cells, SARS-CoV-2 must bind to a human protein called ACE2. The human and mouse ACE2 proteins are different, and SARS-CoV-2 does not bind to mouse cells. Scientists overcame this problem by generating mice that can express the human version of ACE2 and can therefore be infected with SARS-CoV-2. When these genetically modified mice are infected by the virus, they lose weight and become sick in ways that are similar to what happens when people are infected with the virus. Mouse models provided vital information about COVID-19 symptoms and its disease course and continues to be used by researchers to understand COVID-19 disease.</p>
+  <p><a href="https://en.wikipedia.org/wiki/COVID-19"target="_blank">visit to find out more. </a></p>
+      </div>
+    </div>
+  </div>
 
 
-<p style="font-size:40px">-------------------------------------------------------------------------------------------</p>
-          <li style="color:black;font-size:30px">Cystic fibrosis</li>
-          <center><img src="Bronchiectasis_NHLBI.jpg" width="400" height="300" alt="Cystic fibrosis">
-            <img src="Cysticfibrosis01.jpg" width="400" height="300" alt="Cystic fibrosis"></center>
-          <p>Cystic fibrosis (CF) is a genetic disease that affects the lungs, digestive system, and other organs. It develops when the protein that produces mucus does not function as usual. This results in thick, sticky mucus that can damage or obstruct organs.
+
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="large-font" style="color:black;"><b>Cystic Fibrosis</b></h1>
+
+        <p>Cystic fibrosis (CF) is a genetic disease that affects the lungs, digestive system, and other organs. It develops when the protein that produces mucus does not function as usual. This results in thick, sticky mucus that can damage or obstruct organs.
 There is currently no cureTrusted Source, but treatments can help manage the condition, relieve the symptoms, and reduce the risk of complications. This improves a person’s life expectancy and quality of life.
 In 1992 four medical research teams in Britain and the USA bred mice with defects in their cystic fibrosis gene5 6 7 8. In 2004 a further strain was added; using this scientists were able to show that having enough liquid on airway surfaces is the key to preventing mucus build-up in the lungs9. This will be useful for testing lung treatments.
 The underlying lung damage in CF is caused by high concentrations of salt, and the mechanism has been identified in CF mice as a defect in fluid transport. Several ways of correcting this have been developed in mice
-Now working together as a consortium backed by the Cystic Fibrosis Trust, three UK groups in London, Oxford and Edinburgh, have made substantial improvements to the gene therapy protocol. This has been tested in mice and sheep in preparation for further clinical trials. Fifteen CF volunteers are to join a single dose gene therapy trial in 2007, while a further 200 people are to be monitored. In 2008 up to 100 of these people will be recruited into a multi-dose gene therapy trial</p>
-</ul>
+Now working together as a consortium backed by the Cystic Fibrosis Trust, three UK groups in London, Oxford and Edinburgh, have made substantial improvements to the gene therapy protocol. This has been tested in mice and sheep in preparation for further clinical trials. Fifteen CF volunteers are to join a single dose gene therapy trial in 2007, while a further 200 people are to be monitored. In 2008 up to 100 of these people will be recruited into a multi-dose gene therapy trial.</p>
+
+      </div>
+      <div class="column-33">
+        <img src="Bronchiectasis_NHLBI.jpg" width="335" height="471" alt="Cystic fibrosis">
+          <img src="Cysticfibrosis01.jpg" width="335" height="471" alt="Cystic fibrosis">
+      </div>
+    </div>
+  </div>
+
+
 <center><h2>animal modles of CF</h2></center>
 <center>
 <table style="font-size: 24px;">
 <tr>
 <th style="width:20%"></th>
-<th style="width:10%">mice</th>
-<th style="width:10%">rats</th>
-<th style="width:10%">ferrets</th>
-<th style="width:10%">pigs</th>
-<th style="width:10%">sheep</th>
+<th style="width:10%">Mice</th>
+<th style="width:10%">Rats</th>
+<th style="width:10%">Ferrets</th>
+<th style="width:10%">Pigs</th>
+<th style="width:10%">Sheep</th>
 
 </tr>
 <tr>
@@ -204,22 +354,17 @@ Now working together as a consortium backed by the Cystic Fibrosis Trust, three 
 <p class="footer-title"><p1>Copyright @</p1> <SPan><p1>animal kingdom</p1></SPan></p>
 <br>
 
-<div class="container">
+<div class="social-icons">
 
-  <div class="effect aeneas">
-
-    <div class="buttons">
-      <a href="https://www.facebook.com/" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="https://twitter.com/?lang=en" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/?hl=en" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.youtube.com/" class="yt" title="Join us on youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-    </div>
-  </div>
-
-
-
-
-
+<a style="padding-right:10px;">
+<a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #2561F8;"></i></a>
+<a style="padding-right:50px;">
+<a href="#"><i class="fa-brands fa-instagram-square fa-2x" style="color: #CA5E28;"></i></a>
+<a style="padding-right:50px;">
+<a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: #2DBDEE;"></i></a>
+<a style="padding-right:50px;"><a href="#"><i class="fa-brands fa-youtube fa-2x" style="color: #E90C0C;"></i></a>
+</div>
 
 </footer>
 </body>
+</html>
